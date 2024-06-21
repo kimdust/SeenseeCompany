@@ -1,8 +1,3 @@
-var swiper = new Swiper(".company_goal_slide", {
-  slidesPerView: 3,
-  freeMode: true,
-});
-
 $(document).ready(function () {
   $(
     ".hd_gnb ul li:nth-child(2) a, .hd_gnb ul li:nth-child(3) a, .hd_gnb ul li:nth-child(4) a"

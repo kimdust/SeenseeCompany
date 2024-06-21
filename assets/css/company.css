@@ -374,10 +374,9 @@ body {
 .wrap #main_goal {
   width: 100%;
   height: calc(100vh - 100px);
-  padding: 0 150px;
 }
 .wrap #main_goal .company_nav {
-  margin: 30px 0 100px 0;
+  margin: 30px 0 70px 0;
 }
 .wrap #main_goal .company_nav ul {
   display: flex;
@@ -388,6 +387,172 @@ body {
 .wrap #main_goal .company_nav ul li:nth-child(2) {
   font-family: "GmarketSansMedium";
   border-bottom: 1px solid #fff;
+}
+.wrap #main_goal .company_goal_slide {
+  margin-left: 150px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper {
+  width: 2900px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide {
+  width: 2900px !important;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap {
+  display: flex;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top {
+  width: 400px;
+  height: 300px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_pick {
+  position: relative;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_pick .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_pick .line {
+  width: 1px;
+  height: 350px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner {
+  display: flex;
+  flex-direction: column;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner .txt_box {
+  margin-left: 20px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner .txt_box h2 {
+  font-size: 18px;
+  font-family: "GmarketSansBold";
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner .txt_box strong {
+  font-family: "GmarketSansMedium";
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner .txt_bottom {
+  margin-top: 20px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_box {
+  width: 2900px;
+  height: 50px;
+  background: linear-gradient(to right, #101010, #e50014);
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap {
+  display: flex;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  display: flex;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_pick .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_pick .line {
+  width: 1px;
+  height: 350px;
+  background: #fff;
+  position: absolute;
+  top: -50px;
+  left: 5px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner .txt_box {
+  margin-left: 20px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner .txt_box h2 {
+  font-size: 18px;
+  font-family: "GmarketSansBold";
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner .txt_box strong {
+  font-family: "GmarketSansMedium";
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner .txt_bottom {
+  margin-top: 20px;
+}
+.wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide:last-child {
+  width: 0;
+}
+.wrap #main_map {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+.wrap #main_map .company_nav {
+  margin: 30px 0 70px 0;
+}
+.wrap #main_map .company_nav ul {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  font-size: 18px;
+}
+.wrap #main_map .company_nav ul li:last-child {
+  font-family: "GmarketSansMedium";
+  border-bottom: 1px solid #fff;
+}
+.wrap #main_map .map {
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.wrap #main_map .map img {
+  width: 755px;
+}
+.wrap #main_map .map .map_txt {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrap #main_map .map .map_txt .map_metro strong {
+  font-family: "GmarketSansMedium";
+}
+.wrap #main_map .map .map_txt .map_metro ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrap #main_map .map .map_txt .map_metro ul li {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.wrap #main_map .map .map_txt .map_metro ul li #orange {
+  color: #fa6739;
+}
+.wrap #main_map .map .map_txt .map_metro ul li #red {
+  color: #e50014;
+}
+.wrap #main_map .map .map_txt .map_metro ul li #green {
+  color: #549734;
+}
+.wrap #main_map .map .map_txt .map_car strong {
+  font-family: "GmarketSansMedium";
+}
+.wrap #main_map .map .map_txt .map_car ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrap #main_map .map .map_txt .map_car ul li .fa-angle-right {
+  width: 60px;
+  text-align: center;
 }
 .wrap #footer {
   width: 100%;

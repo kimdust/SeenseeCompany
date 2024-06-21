@@ -117,9 +117,8 @@ body {
   #main_goal {
     width: 100%;
     height: calc(100vh - 100px);
-    padding: 0 150px;
     .company_nav {
-      margin: 30px 0 100px 0;
+      margin: 30px 0 70px 0;
       ul {
         display: flex;
         gap: 50px;
@@ -128,6 +127,181 @@ body {
         li:nth-child(2) {
           font-family: "GmarketSansMedium";
           border-bottom: 1px solid $white;
+        }
+      }
+    }
+    .company_goal_slide {
+      margin-left: 150px;
+      .swiper-wrapper {
+        width: 2900px;
+        .swiper-slide {
+          width: 2900px !important;
+          .slide_top_wrap {
+            display: flex;
+            .slide_top {
+              width: 400px;
+              height: 300px;
+              .txt_pick {
+                position: relative;
+                .circle {
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background-color: $white;
+                }
+                .line {
+                  width: 1px;
+                  height: 350px;
+                  background: $white;
+                  position: absolute;
+                  top: 0;
+                  left: 5px;
+                }
+              }
+              .txt_inner {
+                display: flex;
+                flex-direction: column;
+                .txt_box {
+                  margin-left: 20px;
+                  h2 {
+                    font-size: 18px;
+                    font-family: "GmarketSansBold";
+                  }
+                  strong {
+                    font-family: "GmarketSansMedium";
+                  }
+                }
+                .txt_bottom {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+          .slide_box {
+            width: 2900px;
+            height: 50px;
+            background: linear-gradient(to right, $bg, $primary);
+          }
+          .slide_bottom_wrap {
+            display: flex;
+            .slide_bottom {
+              width: 400px;
+              height: 300px;
+              position: relative;
+              display: flex;
+              .txt_pick {
+                .circle {
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background-color: $white;
+                  position: absolute;
+                  bottom: 0;
+                }
+                .line {
+                  width: 1px;
+                  height: 350px;
+                  background: $white;
+                  position: absolute;
+                  top: -50px;
+                  left: 5px;
+                }
+              }
+              .txt_inner {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .txt_box {
+                  margin-left: 20px;
+                  h2 {
+                    font-size: 18px;
+                    font-family: "GmarketSansBold";
+                  }
+                  strong {
+                    font-family: "GmarketSansMedium";
+                  }
+                }
+                .txt_bottom {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+          &:last-child {
+            width: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #main_map {
+    width: 100%;
+    height: calc(100vh - 100px);
+    .company_nav {
+      margin: 30px 0 70px 0;
+      ul {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        font-size: 18px;
+        li:last-child {
+          font-family: "GmarketSansMedium";
+          border-bottom: 1px solid $white;
+        }
+      }
+    }
+    .map {
+      padding: 0 150px;
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      img {
+        width: 755px;
+      }
+      .map_txt {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .map_metro {
+          strong {
+            font-family: "GmarketSansMedium";
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            li {
+              display: flex;
+              align-items: center;
+              gap: 40px;
+              #orange {
+                color: #fa6739;
+              }
+              #red {
+                color: $primary;
+              }
+              #green {
+                color: #549734;
+              }
+            }
+          }
+        }
+        .map_car {
+          strong {
+            font-family: "GmarketSansMedium";
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            li {
+              .fa-angle-right {
+                width: 60px;
+                text-align: center;
+              }
+            }
+          }
         }
       }
     }

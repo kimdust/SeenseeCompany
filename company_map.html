@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <title>신시컴퍼니 | 오시는 길</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="신시컴퍼니" />
+    <meta property="og:description" content="새로운 뮤지컬 세상의 구현" />
+    <meta property="og:image" content="./images/urlthumbnail.png" />
+    <meta property="og:url" content="https://kimdust.me/SeenseeCompany/" />
+
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/company.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/company.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <h1 class="hd_title">
+          <a href="index.html">
+            <img src="./images/headnfoot/logo_e_red.png" alt="신시컴퍼니" />
+          </a>
+        </h1>
+        <div class="hd_gnb">
+          <ul>
+            <li>
+              <a href="company.html" style="font-family: GmarketSansBold">
+                신시컴퍼니
+              </a>
+            </li>
+            <li><a href="work.html">작품</a></li>
+            <li><a href="schedule.html">공연일정</a></li>
+            <li><a href="evnet.html">이벤트</a></li>
+          </ul>
+        </div>
+      </header>
+      <main id="main_map">
+        <div class="company_nav">
+          <ul>
+            <li><a href="company_introduce.html">소개</a></li>
+            <li><a href="company_goal.html">수상내역</a></li>
+            <li><a href="company_map.html">오시는 길</a></li>
+          </ul>
+        </div>
+        <div class="map">
+          <img src="./images/introduce/map.png" alt="약도" />
+          <div class="map_txt">
+            <div class="map_metro">
+              <strong>대중교통 이용 시</strong>
+              <ul>
+                <li style="margin-top: 20px">
+                  <p>
+                    <strong id="orange">3호선 양재역</strong>
+                    5번 출구
+                  </p>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p id="align_left">
+                    마을 18번(양재종합사회복지관 앞)
+                    <br />
+                    마을 21번(로이젠트양재아파트 앞)
+                    <br />
+                    지선 4430번(로이젠트양재아파트 앞)
+                  </p>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>
+                    <strong>구룡사사거리</strong>
+                    하차
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong id="red">신분당선 양재시민의숲역</strong>
+                    3번 출구
+                  </p>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p id="align_left">마을 서초09번(소방서 앞)</p>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>
+                    <strong>언남중고교</strong>
+                    하차
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong id="green">2호선 강남역</strong>
+                    10번 출구
+                  </p>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p id="align_left">
+                    마을 09번(강남역,뉴욕제과 정류장 앞)
+                    <br />
+                    지선 4421번(아리따움 앞)
+                  </p>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>
+                    <strong>구룡사입구</strong>
+                    하차
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="map_car">
+              <strong>자가용 이용시</strong>
+              <ul>
+                <li style="margin-top: 20px">
+                  서초IC에서 <strong>양재역</strong> 방면으로 우회전
+                  <i class="fa-solid fa-angle-right"></i>
+                  <strong>남부순환로</strong>를 따라 이동
+                  <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  양재전화국에서 <strong>포이사거리</strong> 방면으로 우회전
+                  <i class="fa-solid fa-angle-right"></i>
+                  <strong>국악고</strong> 방면으로 직진
+                  <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  <strong>육교</strong> 지나 150m 더 가서 골목으로 우회전
+                  <i class="fa-solid fa-angle-right"></i>
+                  <strong>구룡공원 주차장</strong>에서 좌회전
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="ft_left">
+          <img src="./images/headnfoot/logo_h_white.png" alt="신시컴퍼니" />
+          <div class="ft_info">
+            <p>
+              <strong>대표</strong> 최은경 |
+              <strong>사업자번호</strong> 214-86-62064
+            </p>
+            <p>
+              <strong>주소</strong> 서울특별시 서초구 논현로5길 31-14 신시빌딩 |
+              <strong>문의</strong> 02-577-1987 |
+              <strong>비즈니스제휴</strong> web@iseensee.com
+            </p>
+          </div>
+        </div>
+        <div class="ft_right">
+          <div class="ft_link">
+            <ul>
+              <li><a href="#">개인정보취급방침</a></li>
+              <li><a href="#">서비스이용약관</a></li>
+              <li><a href="#">이메일무단수집거부</a></li>
+              <li><a href="#">사이트맵</a></li>
+            </ul>
+          </div>
+          <div class="ft_sns">
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/@SEENSEECOMPANY">
+                  <img
+                    src="./images/headnfoot/youtube.png"
+                    alt="신시컴퍼니 유튜브"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/i_seensee/">
+                  <img
+                    src="./images/headnfoot/instagram.png"
+                    alt="신시컴퍼니 인스타그램"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/i_seensee">
+                  <img
+                    src="./images/headnfoot/twitter.png"
+                    alt="신시컴퍼니 트위터"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/iseensee/">
+                  <img
+                    src="./images/headnfoot/facebook.png"
+                    alt="신시컴퍼니 페이스북"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper.company_goal_slide", {
+        slidesPerView: "auto",
+        freeMode: true,
+      });
+    </script>
+  </body>
+</html>
