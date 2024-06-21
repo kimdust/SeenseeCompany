@@ -24,7 +24,7 @@ $(document).ready(function () {
   $(".up_btn").hide();
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 951) {
+    if ($(this).scrollTop() > 500) {
       $(".up_btn").fadeIn();
       $(".up_btn").css("visibility", "visible");
     } else {

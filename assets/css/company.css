@@ -522,6 +522,7 @@ body {
 }
 .wrap #main_map .map .map_txt .map_metro strong {
   font-family: "GmarketSansMedium";
+  font-size: 18px;
 }
 .wrap #main_map .map .map_txt .map_metro ul {
   display: flex;
