@@ -17,13 +17,13 @@ $(document).ready(function () {
   });
 
   $(
-    ".hd_gnb ul li:nth-child(1) a, .hd_gnb ul li:nth-child(3) a, .hd_gnb ul li:nth-child(4) a"
+    ".hd_gnb ul li:nth-child(1) a, .hd_gnb ul li:nth-child(2) a, .hd_gnb ul li:nth-child(3) a"
   ).mouseenter(function () {
     $(this).css("font-family", "GmarketSansBold");
   });
 
   $(
-    ".hd_gnb ul li:nth-child(1) a, .hd_gnb ul li:nth-child(3) a, .hd_gnb ul li:nth-child(4) a"
+    ".hd_gnb ul li:nth-child(1) a, .hd_gnb ul li:nth-child(2) a, .hd_gnb ul li:nth-child(3) a"
   ).mouseleave(function () {
     $(this).css("font-family", "GmarketSansMedium");
   });
@@ -33,10 +33,9 @@ $(document).ready(function () {
   });
 });
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.set(".musical", { opacity: 0, y: 20 });
+gsap.set(".now_ing", { opacity: 0, y: 20 });
 
-gsap.utils.toArray(".musical").forEach((card, index) => {
+gsap.utils.toArray(".now_ing").forEach((card, index) => {
   gsap.to(card, {
     opacity: 1,
     y: 0,
@@ -45,9 +44,11 @@ gsap.utils.toArray(".musical").forEach((card, index) => {
   });
 });
 
-gsap.from(".plays", {
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".before_end", {
   scrollTrigger: {
-    trigger: ".plays",
+    trigger: ".before_end",
     start: "top 80%",
     end: "bottom 20%",
     toggleActions: "play none none none",
@@ -56,24 +57,4 @@ gsap.from(".plays", {
   opacity: 0,
   duration: 1,
   stagger: 0.3,
-});
-
-gsap.set("#main_musical ul li", { opacity: 0, y: 20 });
-gsap.utils.toArray("#main_musical ul li").forEach((card, index) => {
-  gsap.to(card, {
-    opacity: 1,
-    y: 0,
-    duration: 0.5,
-    delay: index * 0.2,
-  });
-});
-
-gsap.set("#main_plays ul li", { opacity: 0, y: 20 });
-gsap.utils.toArray("#main_plays ul li").forEach((card, index) => {
-  gsap.to(card, {
-    opacity: 1,
-    y: 0,
-    duration: 0.5,
-    delay: index * 0.2,
-  });
 });

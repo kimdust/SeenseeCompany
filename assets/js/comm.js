@@ -20,6 +20,47 @@ gsap.set(".intro_main_txt span, .intro_main_txt h2", { opacity: 0 });
 gsap.to(".intro_main_txt span", { opacity: 1, duration: 1, delay: 0.5 });
 gsap.to(".intro_main_txt h2", { opacity: 1, duration: 1, delay: 1.5 });
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".screening", {
+  scrollTrigger: {
+    trigger: ".screening",
+    start: "top 80%",
+    end: "bottom 20%",
+    toggleActions: "play none none none",
+  },
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.3,
+});
+
+gsap.from(".youtube", {
+  scrollTrigger: {
+    trigger: ".youtube",
+    start: "top 80%",
+    end: "bottom 20%",
+    toggleActions: "play none none none",
+  },
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.3,
+});
+
+gsap.from(".instagram", {
+  scrollTrigger: {
+    trigger: ".instagram",
+    start: "top 80%",
+    end: "bottom 20%",
+    toggleActions: "play none none none",
+  },
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.3,
+});
+
 $(document).ready(function () {
   $(".up_btn").hide();
 
@@ -44,5 +85,9 @@ $(document).ready(function () {
 
   $(".hd_gnb ul li a").mouseleave(function () {
     $(this).css("font-family", "GmarketSansMedium");
+  });
+
+  $(".mobile_header .fa-bars").click(function () {
+    $(".mobile_header ul").toggle();
   });
 });

@@ -304,6 +304,9 @@ body {
   font-family: "GmarketSansMedium";
   font-size: 20px;
 }
+.wrap #header .mobile_header {
+  display: none;
+}
 .wrap #main {
   width: 100%;
   height: calc(100vh - 100px);
@@ -599,4 +602,292 @@ body {
 }
 .wrap #footer .ft_right .ft_sns ul li img {
   width: 100%;
+}
+.wrap #footer .mobile_footer {
+  display: none;
+}
+
+@media (max-width: 1220px) {
+  body {
+    font-size: 15px;
+  }
+  .wrap #header {
+    padding: 0 20px;
+  }
+  .wrap #header .hd_title img {
+    width: 200px;
+  }
+  .wrap #header .hd_gnb {
+    display: none;
+  }
+  .wrap #header .mobile_header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .wrap #header .mobile_header ul {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    text-align: right;
+    top: 50px;
+    right: -20px;
+    z-index: 10000;
+    background: #101010;
+  }
+  .wrap #header .mobile_header ul li {
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .wrap #main {
+    padding: 0 20px;
+    height: 100%;
+  }
+  .wrap #main .company_nav {
+    margin: 20px 0 70px 0;
+  }
+  .wrap #main .company_nav ul {
+    gap: 30px;
+    font-size: 15px;
+  }
+  .wrap #main .introduce_txt h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main .introduce_txt h2 strong {
+    display: block;
+    font-size: 30px;
+    font-family: "GmarketSansBold";
+  }
+  .wrap #main .introduce_txt p {
+    font-size: 15px;
+  }
+  .wrap #main .introduce_card {
+    padding-top: 80px;
+  }
+  .wrap #main .introduce_card ul {
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+  .wrap #main .introduce_card ul li {
+    width: 100%;
+  }
+  .wrap #main .up_btn {
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .wrap #main_goal {
+    height: 100%;
+  }
+  .wrap #main_goal .company_nav {
+    margin: 20px 0 70px 0;
+  }
+  .wrap #main_goal .company_nav ul {
+    gap: 30px;
+    font-size: 15px;
+  }
+  .wrap #main_goal .company_goal_slide {
+    margin-left: 20px;
+    margin-bottom: 100px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper {
+    width: 2900px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide {
+    width: 2900px !important;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap {
+    display: flex;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top {
+    width: 400px;
+    height: 250px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_pick {
+    position: relative;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_pick .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_pick .line {
+    width: 1px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 5px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner .txt_box {
+    margin-left: 20px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner .txt_box h2 {
+    font-size: 15px;
+    font-family: "GmarketSansBold";
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner .txt_box strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_top_wrap .slide_top .txt_inner .txt_bottom {
+    margin-top: 20px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_box {
+    width: 2900px;
+    height: 50px;
+    background: linear-gradient(to right, #101010, #e50014);
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap {
+    display: flex;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom {
+    width: 400px;
+    height: 250px;
+    position: relative;
+    display: flex;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_pick .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_pick .line {
+    width: 1px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    top: -50px;
+    left: 5px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner .txt_box {
+    margin-left: 20px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner .txt_box h2 {
+    font-size: 15px;
+    font-family: "GmarketSansBold";
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner .txt_box strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide .slide_bottom_wrap .slide_bottom .txt_inner .txt_bottom {
+    margin-top: 20px;
+  }
+  .wrap #main_goal .company_goal_slide .swiper-wrapper .swiper-slide:last-child {
+    width: 0;
+  }
+  .wrap #main_map {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+  .wrap #main_map .company_nav {
+    margin: 20px 0 70px 0;
+  }
+  .wrap #main_map .company_nav ul {
+    gap: 30px;
+    font-size: 15px;
+  }
+  .wrap #main_map .map {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  .wrap #main_map .map img {
+    width: 100%;
+  }
+  .wrap #main_map .map .map_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .wrap #main_map .map .map_txt .map_metro strong {
+    font-family: "GmarketSansMedium";
+    font-size: 18px;
+  }
+  .wrap #main_map .map .map_txt .map_metro ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .wrap #main_map .map .map_txt .map_metro ul li {
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wrap #main_map .map .map_txt .map_metro ul li #orange {
+    color: #fa6739;
+  }
+  .wrap #main_map .map .map_txt .map_metro ul li #red {
+    color: #e50014;
+  }
+  .wrap #main_map .map .map_txt .map_metro ul li #green {
+    color: #549734;
+  }
+  .wrap #main_map .map .map_txt .map_car strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main_map .map .map_txt .map_car ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .wrap #main_map .map .map_txt .map_car ul li .fa-angle-right {
+    width: 60px;
+    text-align: center;
+  }
+  .wrap #footer {
+    height: 400px;
+  }
+  .wrap #footer .ft_left {
+    display: none;
+  }
+  .wrap #footer .ft_right {
+    display: none;
+  }
+  .wrap #footer .mobile_footer {
+    display: block;
+    padding: 0 20px;
+  }
+  .wrap #footer .mobile_footer img {
+    width: 100px;
+  }
+  .wrap #footer .mobile_footer .ft_info {
+    margin: 10px 0 20px 0;
+  }
+  .wrap #footer .mobile_footer .ft_info p strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #footer .mobile_footer .ft_link {
+    margin-bottom: 20px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul {
+    display: flex;
+    gap: 10px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li {
+    width: 30px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=company.css.map */
