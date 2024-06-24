@@ -19,13 +19,25 @@ $(document).ready(function () {
   $(
     ".hd_gnb ul li:nth-child(1) a, .hd_gnb ul li:nth-child(2) a, .hd_gnb ul li:nth-child(4) a"
   ).mouseenter(function () {
-    $(this).css("font-family", "GmarketSansBold");
+    $(this).css("font-family", "GmarketSansMedium");
   });
 
   $(
     ".hd_gnb ul li:nth-child(1) a, .hd_gnb ul li:nth-child(2) a, .hd_gnb ul li:nth-child(4) a"
   ).mouseleave(function () {
+    $(this).css("font-family", "GmarketSansLight");
+  });
+
+  $(
+    ".mobile_header ul li:nth-child(1) a, .mobile_header ul li:nth-child(2) a, .mobile_header ul li:nth-child(4) a"
+  ).mouseenter(function () {
     $(this).css("font-family", "GmarketSansMedium");
+  });
+
+  $(
+    ".mobile_header ul li:nth-child(1) a, .mobile_header ul li:nth-child(2) a, .mobile_header ul li:nth-child(4) a"
+  ).mouseleave(function () {
+    $(this).css("font-family", "GmarketSansLight");
   });
 
   $("#main_2023, #main_2025").hide();

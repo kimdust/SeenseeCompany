@@ -301,8 +301,10 @@ body {
   gap: 100px;
 }
 .wrap #header .hd_gnb ul li {
-  font-family: "GmarketSansMedium";
   font-size: 20px;
+}
+.wrap #header .hd_gnb ul li:hover {
+  font-family: "GmarketSansMedium";
 }
 .wrap #header .mobile_header {
   display: none;
@@ -633,7 +635,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 780px) {
   body {
     font-size: 15px;
   }
@@ -744,6 +746,183 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .wrap #main .instagram ul li a {
+    display: inline;
+    box-shadow: none;
+  }
+  .wrap #main .instagram ul li a img {
+    width: 100%;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+  }
+  .wrap #main .instagram ul li a img:hover {
+    transform: none;
+  }
+  .wrap #main .up_btn {
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .wrap #footer {
+    height: 400px;
+  }
+  .wrap #footer .ft_left {
+    display: none;
+  }
+  .wrap #footer .ft_right {
+    display: none;
+  }
+  .wrap #footer .mobile_footer {
+    display: block;
+    padding: 0 20px;
+  }
+  .wrap #footer .mobile_footer img {
+    width: 100px;
+  }
+  .wrap #footer .mobile_footer .ft_info {
+    margin: 10px 0 20px 0;
+  }
+  .wrap #footer .mobile_footer .ft_info p strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #footer .mobile_footer .ft_link {
+    margin-bottom: 20px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul {
+    display: flex;
+    gap: 10px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li {
+    width: 30px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li img {
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  .wrap #header {
+    padding: 0 50px;
+  }
+  .wrap #header .hd_title img {
+    width: 200px;
+  }
+  .wrap #header .hd_gnb {
+    display: none;
+  }
+  .wrap #header .mobile_header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .wrap #header .mobile_header .fa-bars {
+    font-size: 20px;
+  }
+  .wrap #header .mobile_header ul {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    text-align: right;
+    top: 50px;
+    right: -20px;
+    z-index: 10000;
+    background: #101010;
+  }
+  .wrap #header .mobile_header ul li {
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .wrap #header .mobile_header ul li:hover {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main .intro .intro_txt_animation .txt_box #stroke_txt {
+    font-size: 120px;
+  }
+  .wrap #main .intro .intro_txt_animation2 .txt_box2 p {
+    font-size: 120px;
+  }
+  .wrap #main .intro .intro_txt_animation3 .txt_box #stroke_txt {
+    font-size: 120px;
+  }
+  .wrap #main .intro .intro_main_txt {
+    width: 600px;
+    height: 600px;
+  }
+  .wrap #main .intro .intro_main_txt span {
+    font-size: 25px;
+  }
+  .wrap #main .intro .intro_main_txt h2 {
+    font-size: 60px;
+  }
+  .wrap #main .screening {
+    padding: 0 50px;
+    margin: 70px 0;
+  }
+  .wrap #main .screening h3 {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+  .wrap #main .screening ul {
+    gap: 20px;
+  }
+  .wrap #main .screening ul li {
+    width: 50%;
+  }
+  .wrap #main .screening ul li img {
+    width: 100%;
+  }
+  .wrap #main .screening ul li p {
+    top: 33%;
+    transform: translate(-50%, -33%);
+  }
+  .wrap #main .screening ul li .screening_btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .wrap #main .screening ul li .screening_btn button:first-child {
+    margin-right: 0;
+  }
+  .wrap #main .youtube {
+    padding: 0 20px;
+    margin-bottom: 70px;
+  }
+  .wrap #main .youtube h3 {
+    font-size: 18px;
+    margin: 50px 0 70px 0;
+  }
+  .wrap #main .youtube ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .wrap #main .youtube ul li {
+    width: 48.5%;
+  }
+  .wrap #main .youtube ul li a {
+    width: 100%;
+    box-shadow: none;
+  }
+  .wrap #main .youtube ul li a img {
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+  }
+  .wrap #main .instagram {
+    padding: 0 20px;
+    margin-bottom: 100px;
+  }
+  .wrap #main .instagram h3 {
+    font-size: 18px;
+    margin: 50px 0 70px 0;
+  }
+  .wrap #main .instagram ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .wrap #main .instagram ul li {
+    width: 48.5%;
   }
   .wrap #main .instagram ul li a {
     display: inline;

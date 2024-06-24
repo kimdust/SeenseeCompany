@@ -33,8 +33,10 @@ body {
         display: flex;
         gap: 100px;
         li {
-          font-family: "GmarketSansMedium";
           font-size: 20px;
+          &:hover {
+            font-family: "GmarketSansMedium";
+          }
         }
       }
     }
@@ -393,7 +395,7 @@ body {
   }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 780px) {
   body {
     font-size: 15px;
   }
@@ -530,6 +532,216 @@ body {
           flex-direction: column;
           gap: 20px;
           li {
+            a {
+              display: inline;
+              box-shadow: none;
+              img {
+                width: 100%;
+                box-shadow: $imgShadow;
+                &:hover {
+                  transform: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .up_btn {
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    #footer {
+      height: 400px;
+      .ft_left {
+        display: none;
+      }
+      .ft_right {
+        display: none;
+      }
+      .mobile_footer {
+        display: block;
+        padding: 0 20px;
+        img {
+          width: 100px;
+        }
+        .ft_info {
+          margin: 10px 0 20px 0;
+          p {
+            strong {
+              font-family: "GmarketSansMedium";
+            }
+          }
+        }
+        .ft_link {
+          margin-bottom: 20px;
+        }
+        .ft_sns {
+          ul {
+            display: flex;
+            gap: 10px;
+            li {
+              width: 30px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrap {
+    #header {
+      padding: 0 50px;
+      .hd_title {
+        img {
+          width: 200px;
+        }
+      }
+      .hd_gnb {
+        display: none;
+      }
+      .mobile_header {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        .fa-bars {
+          font-size: 20px;
+        }
+        ul {
+          display: none;
+          position: absolute;
+          width: 100vw;
+          text-align: right;
+          top: 50px;
+          right: -20px;
+          z-index: 10000;
+          background: $bg;
+          li {
+            margin-bottom: 20px;
+            padding-right: 20px;
+            &:hover {
+              font-family: "GmarketSansMedium";
+            }
+          }
+        }
+      }
+    }
+
+    #main {
+      .intro {
+        .intro_txt_animation {
+          .txt_box {
+            #stroke_txt {
+              font-size: 120px;
+            }
+          }
+        }
+        .intro_txt_animation2 {
+          .txt_box2 {
+            p {
+              font-size: 120px;
+            }
+          }
+        }
+        .intro_txt_animation3 {
+          .txt_box {
+            #stroke_txt {
+              font-size: 120px;
+            }
+          }
+        }
+        .intro_main_txt {
+          width: 600px;
+          height: 600px;
+          span {
+            font-size: 25px;
+          }
+          h2 {
+            font-size: 60px;
+          }
+        }
+      }
+
+      .screening {
+        padding: 0 50px;
+        margin: 70px 0;
+        h3 {
+          font-size: 18px;
+          margin-bottom: 70px;
+        }
+        ul {
+          gap: 20px;
+          li {
+            width: 50%;
+            img {
+              width: 100%;
+            }
+            p {
+              top: 33%;
+              transform: translate(-50%, -33%);
+            }
+            .screening_btn {
+              display: flex;
+              flex-direction: row;
+              gap: 10px;
+              button {
+                &:first-child {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .youtube {
+        padding: 0 20px;
+        margin-bottom: 70px;
+        h3 {
+          font-size: 18px;
+          margin: 50px 0 70px 0;
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 20px;
+          li {
+            width: 48.5%;
+            a {
+              width: 100%;
+              box-shadow: none;
+              img {
+                box-shadow: $imgShadow;
+              }
+            }
+          }
+        }
+      }
+
+      .instagram {
+        padding: 0 20px;
+        margin-bottom: 100px;
+        h3 {
+          font-size: 18px;
+          margin: 50px 0 70px 0;
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 20px;
+          li {
+            width: 48.5%;
             a {
               display: inline;
               box-shadow: none;

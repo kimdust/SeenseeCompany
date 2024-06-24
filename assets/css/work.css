@@ -301,8 +301,13 @@ body {
   gap: 100px;
 }
 .wrap #header .hd_gnb ul li {
-  font-family: "GmarketSansMedium";
   font-size: 20px;
+}
+.wrap #header .hd_gnb ul li:hover {
+  font-family: "GmarketSansMedium";
+}
+.wrap #header .hd_gnb ul li:nth-child(2) {
+  font-family: "GmarketSansMedium";
 }
 .wrap #header .mobile_header {
   display: none;
@@ -517,7 +522,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 780px) {
   body {
     font-size: 15px;
   }
@@ -548,6 +553,12 @@ body {
   .wrap #header .mobile_header ul li {
     margin-bottom: 20px;
     padding-right: 20px;
+  }
+  .wrap #header .mobile_header ul li:hover {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #header .mobile_header ul li:nth-child(2) {
+    font-family: "GmarketSansMedium";
   }
   .wrap #main {
     width: 100%;
@@ -645,6 +656,194 @@ body {
     align-items: center;
     justify-content: center;
     width: 45%;
+    position: relative;
+  }
+  .wrap #main_musical ul li img,
+  .wrap #main_plays ul li img {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+    transition: all 0.2s linear;
+    cursor: pointer;
+  }
+  .wrap #main_musical ul span,
+  .wrap #main_plays ul span {
+    font-size: 15px;
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #footer {
+    height: 400px;
+  }
+  .wrap #footer .ft_left {
+    display: none;
+  }
+  .wrap #footer .ft_right {
+    display: none;
+  }
+  .wrap #footer .mobile_footer {
+    display: block;
+    padding: 0 20px;
+  }
+  .wrap #footer .mobile_footer img {
+    width: 100px;
+  }
+  .wrap #footer .mobile_footer .ft_info {
+    margin: 10px 0 20px 0;
+  }
+  .wrap #footer .mobile_footer .ft_info p strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #footer .mobile_footer .ft_link {
+    margin-bottom: 20px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul {
+    display: flex;
+    gap: 10px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li {
+    width: 30px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li img {
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  body {
+    font-size: 15px;
+  }
+  .wrap #header {
+    padding: 0 50px;
+  }
+  .wrap #header .hd_title img {
+    width: 200px;
+  }
+  .wrap #header .hd_gnb {
+    display: none;
+  }
+  .wrap #header .mobile_header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .wrap #header .mobile_header .fa-bars {
+    font-size: 20px;
+  }
+  .wrap #header .mobile_header ul {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    text-align: right;
+    top: 50px;
+    right: -20px;
+    z-index: 10000;
+    background: #101010;
+  }
+  .wrap #header .mobile_header ul li {
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .wrap #header .mobile_header ul li:hover {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #header .mobile_header ul li:nth-child(2) {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .wrap #main .musical {
+    margin: 20px 0 70px 0;
+  }
+  .wrap #main .plays {
+    margin-bottom: 100px;
+  }
+  .wrap #main .musical,
+  .wrap #main .plays {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap #main .musical h2,
+  .wrap #main .plays h2 {
+    font-size: 15px;
+    font-family: "GmarketSansMedium";
+    border-bottom: 1px solid #fff;
+    margin-bottom: 70px;
+  }
+  .wrap #main .musical ul,
+  .wrap #main .plays ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .wrap #main .musical ul li,
+  .wrap #main .plays ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30.5%;
+    position: relative;
+  }
+  .wrap #main .musical ul li img,
+  .wrap #main .plays ul li img {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+    transition: all 0.2s linear;
+    cursor: pointer;
+  }
+  .wrap #main .musical ul span,
+  .wrap #main .plays ul span {
+    font-size: 15px;
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main .musical .more_btn,
+  .wrap #main .plays .more_btn {
+    margin-top: 80px;
+  }
+  .wrap #main .musical .more_btn button,
+  .wrap #main .plays .more_btn button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+  }
+  .wrap #main .up_btn {
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .wrap #main_musical,
+  .wrap #main_plays {
+    width: 100%;
+    padding: 0 20px;
+    margin: 30px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap #main_musical h2,
+  .wrap #main_plays h2 {
+    font-size: 15px;
+    font-family: "GmarketSansMedium";
+    border-bottom: 1px solid #fff;
+    margin-bottom: 70px;
+  }
+  .wrap #main_musical ul,
+  .wrap #main_plays ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .wrap #main_musical ul li,
+  .wrap #main_plays ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30.5%;
     position: relative;
   }
   .wrap #main_musical ul li img,

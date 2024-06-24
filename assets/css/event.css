@@ -301,8 +301,13 @@ body {
   gap: 100px;
 }
 .wrap #header .hd_gnb ul li {
-  font-family: "GmarketSansMedium";
   font-size: 20px;
+}
+.wrap #header .hd_gnb ul li:hover {
+  font-family: "GmarketSansMedium";
+}
+.wrap #header .hd_gnb ul li:last-child {
+  font-family: "GmarketSansMedium";
 }
 .wrap #header .mobile_header {
   display: none;
@@ -417,7 +422,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 780px) {
   body {
     font-size: 15px;
   }
@@ -499,6 +504,140 @@ body {
   }
   .wrap #main .before_end ul li {
     width: 100%;
+    margin-bottom: 0px;
+  }
+  .wrap #main .before_end ul li a img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+  }
+  .wrap #main .before_end .more_btn {
+    margin-top: 30px;
+  }
+  .wrap #main .before_end .more_btn button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+  }
+  .wrap #footer {
+    height: 400px;
+  }
+  .wrap #footer .ft_left {
+    display: none;
+  }
+  .wrap #footer .ft_right {
+    display: none;
+  }
+  .wrap #footer .mobile_footer {
+    display: block;
+    padding: 0 20px;
+  }
+  .wrap #footer .mobile_footer img {
+    width: 100px;
+  }
+  .wrap #footer .mobile_footer .ft_info {
+    margin: 10px 0 20px 0;
+  }
+  .wrap #footer .mobile_footer .ft_info p strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #footer .mobile_footer .ft_link {
+    margin-bottom: 20px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul {
+    display: flex;
+    gap: 10px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li {
+    width: 30px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li img {
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  body {
+    font-size: 15px;
+  }
+  .wrap #header {
+    padding: 0 50px;
+  }
+  .wrap #header .hd_title img {
+    width: 200px;
+  }
+  .wrap #header .hd_gnb {
+    display: none;
+  }
+  .wrap #header .mobile_header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .wrap #header .mobile_header .fa-bars {
+    font-size: 20px;
+  }
+  .wrap #header .mobile_header ul {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    text-align: right;
+    top: 50px;
+    right: -20px;
+    z-index: 10000;
+    background: #101010;
+  }
+  .wrap #header .mobile_header ul li {
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .wrap #header .mobile_header ul li:hover {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #header .mobile_header ul li:last-child {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .wrap #main .now_ing {
+    margin: 20px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap #main .now_ing h2 {
+    font-size: 15px;
+    font-family: "GmarketSansMedium";
+    border-bottom: 1px solid #fff;
+    margin-bottom: 70px;
+  }
+  .wrap #main .now_ing #mobile_list {
+    display: none;
+  }
+  .wrap #main .now_ing ul {
+    display: block;
+  }
+  .wrap #main .before_end {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap #main .before_end h2 {
+    font-size: 15px;
+    font-family: "GmarketSansMedium";
+    border-bottom: 1px solid #fff;
+    margin-bottom: 70px;
+  }
+  .wrap #main .before_end ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .wrap #main .before_end ul li {
+    width: 48.5%;
     margin-bottom: 0px;
   }
   .wrap #main .before_end ul li a img {

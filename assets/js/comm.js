@@ -79,14 +79,6 @@ $(document).ready(function () {
     return false;
   });
 
-  $(".hd_gnb ul li a").mouseenter(function () {
-    $(this).css("font-family", "GmarketSansBold");
-  });
-
-  $(".hd_gnb ul li a").mouseleave(function () {
-    $(this).css("font-family", "GmarketSansMedium");
-  });
-
   $(".mobile_header .fa-bars").click(function () {
     $(".mobile_header ul").toggle();
   });
